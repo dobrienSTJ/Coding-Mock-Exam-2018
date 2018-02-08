@@ -8,6 +8,7 @@ from tkinter import *   #These Modules both Import the Python GUI
 from tkinter import messagebox
 from xml.dom import minidom  #Imports a XML Parser
 from subprocess import call #Uploads to Dropbox from Pi
+from turtle import * #For Animations
 
 def start(begin):  #Begins our main Function sequence
     while True:  #begins an infinite loop
@@ -73,6 +74,18 @@ def start(begin):  #Begins our main Function sequence
 
 time = datetime.now()   #Gets a Clock
 print("Timestamp: " + str(time))  #Shows the Time NOW
+canvas = Screen()    #Operates a Turtle Drawing
+
+number = random.randrange(0, 800)
+
+
+turtle = Turtle()
+
+for i in range(4):
+    turtle.forward(100) #number
+    turtle.left(90)  #number
+
+canvas.exitonclick()
 start(0)  #Starts the Main Code, beginnning with Booolean
 #Did not get to Finish....
 xmldoc = minidom.parse('example.xml')  #Takes an XML Document
