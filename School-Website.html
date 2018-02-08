@@ -1,0 +1,280 @@
+<!DOCTYPE html>     
+<html>
+<head>
+<link rel="icon" href="http://www.stjosephsrush.ie/wp-content/uploads/2015/06/Jubilee-Logo-150x150.jpg">  
+<meta charset="utf-8" content="width=device-width, initial-scale=1">
+<title>St. Joseph's Secondary School Rush</title>  
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">  
+  
+<style type="text/css">  
+
+.btn {               
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 12px;
+   
+}
+.button {background-color: #3261ad;}   
+.button:hover {background: #3261ad;}
+    
+p {					
+    
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 38px;
+    text-shadow: 2.5px 2.5px #3261ad;
+    font-weight: bold;
+    font-family: "Verdana";
+    
+}
+html, body {				
+    font-family: "Lato", sans-serif;
+    background-image: url("http://www.stjosephsrush.ie/wp-content/uploads/2015/06/Jubilee-Logo-150x150.jpg");
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #F6F6F6;
+    margin: 0; 
+    height: 100%; 
+}
+h1 {			`		
+    
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: #3261ad; 
+   font-size: 43px;
+   text-shadow: 2px 2px black;
+font-family: "Verdana";
+    
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: #3261ad;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #3261ad;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #ffffff;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: block;
+    width: 100%;
+    display: none; 
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+border-radius: 12px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+border-radius: 12px;
+}
+.dropdown-content a:hover {background-color:#e1e1d0}
+.dropdown:hover .dropdown-content {
+    display: block;
+border-radius: 12px;
+}
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+header {
+ position: relative;
+        
+}
+        
+.header{width:100%;
+   position:fixed;
+  top:0px;
+ background: #ffffff;
+ font-size: 30px;
+ text-align: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+ img.sticky { 
+ position: sticky; 
+ top: 0;
+
+}
+
+.dividertext {
+    width: 100%;
+  color:white;
+ text-align: center;
+    letter-spacing: 2px;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "Verdana";
+}
+
+.divider {
+    width: 100%;
+  background-color:#3261ad;
+  text-align: center;
+
+}
+
+#left {
+
+position: absolute;
+    top: 350px;
+    left: 90px;
+}
+#right {
+  border-radius: 50%;
+position: absolute;
+    top: 350px;
+    right: 90px;
+   height: 90px;
+    width: 85px;
+}
+
+#leftbottom {
+
+position: absolute;
+    top: 550px;
+    left: 90px;
+}
+
+#rightbottom {
+
+position: absolute;
+    top: 550px;
+    right: 90px;
+
+</style>
+</head>
+<body>
+<header id="header">
+<center>
+<img class="sticky" src="http://www.stjosephsrush.ie/wp-content/uploads/2015/08/ST-Logo.png" height = "150">
+</center>
+</header>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a target="_blank" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a target="_blank" href="http://www.stjosephsrush.ie/">Our School</a>
+  <a target="_blank" href="https://www.schoology.com/">Schoology</a>
+  <a target="_blank" href="https://github.com/stjrush">Coding</a>
+  <a target="_blank" href="http://aidlink.ie/">Aidlink</a>
+<a target="_blank" href="#">Sports/Clubs</a>
+  
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+  
+
+<center><h1>St. Joseph's Secondary School</h1>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><p>Rush, Co. Dublin</p></center>
+
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+var bgcolorlist=new Array("#228B22", "#FFD700", "#ADFF2F", "#FF69B4", "#CD5C5C", "#4B0082", "#7CFC00", "#ADD8E6", "#E84643", "#ED0A07") 
+document.divider.divider.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]; 
+    </script>
+    <center><div class="dropdown">
+  <button class="btn button">More Info</button>
+  <div class="dropdown-content">
+  <a target="_blank" href="http://www.stjosephsrush.ie/">Our School</a>
+ <a target="_blank" href="https://www.schoology.com/">Schoology</a>
+  <a target="_blank" href="https://github.com/stjrush">Coding</a>
+  <a target="_blank" href="http://aidlink.ie/">Aidlink</a>
+<a target="_blank" href="#">Sports/Clubs</a>
+  
+  </div>
+</div>
+</center>
+
+<br><br><br>
+
+<div class="divider">
+<center><h2 class="dividertext" >Our History</h2><p2 class="dividertext">St. Josephs Secondary School, Rush, Co. Dublin was founded by the Sisters of Mercy in 1961. Rush is situated in Fingal, approximately 16km from Dublin Airport. The school is located near the South Shore Beach overlooking Lambay Island. In 1980, the school which had until then catered for girls only, became co-educational to cater for further local needs.</p2><center>
+</div>
+<div class="divider">
+<center><h2 class="dividertext" >Our Mission</h2><p2 class="dividertext">We aim to provide a secure and caring environment which promotes effort, achievement and the enjoyment of learning, where students develop self esteem, responsibility and self management skills in an atmosphere of respect and mutual support, inspired by our Catholic tradition.</p2><center>
+</div>
+<div class="divider">
+<center><h2 class="dividertext" >Coding Example Below:</h2><center>
+</div>
+<iframe src="https://trinket.io/embed/python3/8e33dbb294?outputOnly=true&runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</body>
+
+<a href="https://www.schoology.com/">
+<img id="left" src="http://www.stjosephsrush.ie/wp-content/uploads/2015/06/wriggle.png"style="width:200px">
+</a>
+<a href="https://store.wriggle.ie/st-josephs-secondary-school-rush">
+<br><img id="right" src="http://www.stjosephsrush.ie/wp-content/uploads/2015/06/schoology-hero.png"style="width:200px">
+</a>
+<a href="https://pay.easypaymentsplus.com/feepay1.aspx?id=668">
+<br><img id="leftbottom" src="https://pay.easypaymentsplus.com/images/epp_pay_now_1.gif"style="width:200px">
+<br><img id="rightbottom" src="https://pay.easypaymentsplus.com/images/epp_pay_now_1.gif"style="width:200px">
+</a>
+</body>
+  
+  </html>
+
+  
+  </html>
